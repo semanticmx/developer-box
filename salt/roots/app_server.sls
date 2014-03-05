@@ -10,6 +10,7 @@ app_server:
       - php-pdo
       - php-soap
       - php-pecl-apc
+      - php-domxml-php4-php5
       
       - mysql
       - mysql-server
