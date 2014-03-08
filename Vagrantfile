@@ -7,7 +7,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "centos65-x86_64-20140116"
 
   config.vm.synced_folder "salt/roots/", "/srv/salt/"
-  config.vm.synced_folder "projects/", "/var/www/", :nfs => true
+  config.vm.synced_folder "projects/", "/var/www/", :nfs => false
 
   config.vm.network :forwarded_port, guest: 80, host: 8080
   config.vm.network :private_network, ip: "10.0.0.23"
