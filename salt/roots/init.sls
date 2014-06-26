@@ -9,6 +9,11 @@ httpd:
       - file: /var/www
       - file: /var/lib/php
 
+mysqld:
+  service:
+    - running
+    - reload: True
+
 /etc/httpd/conf/httpd.conf:
   file.managed:
     - source: salt://httpd.conf
