@@ -14,11 +14,6 @@ mysqld:
     - running
     - reload: True
 
-memcached:
-  service:
-    - running
-    - reload: True
-
 /etc/httpd/conf/httpd.conf:
   file.managed:
     - source: salt://httpd.conf
