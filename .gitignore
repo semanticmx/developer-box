@@ -1,5 +1,7 @@
 # OS-specific
 .DS_Store
+projects/.buildpath
+projects/.project
 
 # Vagrant stuff
 .vagrant

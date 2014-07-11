@@ -11,7 +11,10 @@ app_server:
       - php-soap
       - php-pecl-apc
       - php-domxml-php4-php5
+      - php-pecl-memcache
       
       - mysql
       - mysql-server
       - mysqltuner
+
+      - memcached
