@@ -18,3 +18,8 @@ app_server:
       - mysqltuner
 
       - memcached
+
+      - python
+      - python-pip
+      - python-virtualenvwrapper 
+      - python-django

@@ -1,0 +1,6 @@
+[ttomecek-django16]
+name=Copr repo for django16 owned by ttomecek
+baseurl=http://copr-be.cloud.fedoraproject.org/results/ttomecek/django16/epel-6-$basearch/
+skip_if_unavailable=True
+gpgcheck=0
+enabled=1
