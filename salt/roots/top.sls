@@ -1,6 +1,7 @@
 base:
   '*':
     - vim
-    - app_server
     - git
+    - third_party
+    - app_server
     - init

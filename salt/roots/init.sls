@@ -8,7 +8,6 @@ httpd:
       - file: /etc/php.ini
       - file: /var/www
       - file: /var/lib/php
-      - file: /etc/yum.repos.d/ttomecek-django16-epel-6.repo 
 
 mysqld:
   service:
@@ -48,7 +47,3 @@ mysqld:
       - user
       - group
       - mode
-
-/etc/yum.repos.d/ttomecek-django16-epel-6.repo:
-  file.managed:
-    - source: salt://ttomecek-django16-epel-6.repo

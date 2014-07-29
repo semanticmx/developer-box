@@ -16,6 +16,7 @@ app_server:
       - mysql
       - mysql-server
       - mysqltuner
+      - mysql-devel
 
       - memcached
 
