@@ -17,10 +17,6 @@ app_server:
       - mysql-server
       - mysqltuner
       - mysql-devel
+      - MySQL-python:
+      - mysql-connector-python
 
-      - memcached
-
-      - python
-      - python-pip
-      - python-virtualenvwrapper 
-      - python-django

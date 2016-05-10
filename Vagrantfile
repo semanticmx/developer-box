@@ -9,8 +9,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.synced_folder "salt/roots/", "/srv/salt/"
 
   config.vm.network :forwarded_port, guest: 80, host: 8080
-  config.vm.network :forwarded_port, guest: 8000, host: 8000
-  config.vm.network :private_network, ip: "10.0.0.23"
+  config.vm.network :private_network, ip: "10.1.0.23"
 
   config.dns.tld = "proof.code"
   config.vm.hostname = "minion"
@@ -30,3 +29,4 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 end
 
 VagrantDNS::Config.auto_run
+
