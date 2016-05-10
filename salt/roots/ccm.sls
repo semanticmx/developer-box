@@ -5,7 +5,7 @@ wordpress_db:
   - name: wordpress
   - password: password
  mysql_grants.present:
-  - database: wordpress.*
+  - database: wp_ccm_dev.*
   - grant: ALL PRIVILEGES
   - user: wordpress
   - host: '%'
@@ -31,7 +31,7 @@ get_wp-cli:
 config_wordpress:
  cmd.run:
   - cwd: /var/www/html/
-  - name: 'php ~/wp core config --dbname=wordpress --dbuser=wordpress --dbpass=password'
+  - name: 'php ~/wp core config --dbname=wp_ccm_dev --dbuser=wordpress --dbpass=password'
   - user: vagrant
 
 install_wordpress:
